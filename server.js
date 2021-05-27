@@ -10,6 +10,7 @@ const pool = new Pool({
 
 server.use(morgan('tiny'));
 server.use(express.json());
+server.use(express.static('public'));
 
 server.get('/api/pets', (req, res) => {
   pool.query('SELECT * FROM pets', (err, data) => {
