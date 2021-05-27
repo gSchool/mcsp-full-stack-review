@@ -7,7 +7,7 @@ server.use(morgan('tiny'));
 server.use(express.json());
 
 server.get('/api/pets', (req, res) => {
-  res.send('made request to /api/pets');
+  res.send('made request to /api/pes');
 });
 
 server.listen(3000, () => {
